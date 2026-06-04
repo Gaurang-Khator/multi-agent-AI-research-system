@@ -6,7 +6,7 @@ from tavily import TavilyClient
 import requests
 import os
 from bs4 import BeautifulSoup
-from rich import print
+
 
 tavily = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
 
