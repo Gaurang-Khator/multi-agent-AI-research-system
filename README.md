@@ -35,7 +35,7 @@ The system consists of four main components:
 - Writer Agent: Generates research reports
 - Critic Agent: Evaluates and scores output
 
-### 3. **Main Pipeline** (`main.py`)
+### 3. **Main Pipeline** (`pipeline.py`)
 - Coordinates the multi-agent workflow
 - Manages agent communication and data flow
 
@@ -98,7 +98,7 @@ MISTRAL_API_KEY=your_mistral_api_key
 
 ### Run the Main Pipeline
 ```bash
-python main.py
+python pipeline.py
 ```
 
 ### Run with Streamlit UI
@@ -110,7 +110,7 @@ streamlit run app.py
 
 ```
 multi-agent-AI-research-system/
-├── main.py              # Entry point and main pipeline
+├── pipeline.py          # Entry point and main pipeline
 ├── agents.py            # Agent definitions and orchestration
 ├── tools.py             # Tool implementations (web search, scraping)
 ├── pyproject.toml       # Project metadata and dependencies
@@ -142,7 +142,7 @@ To extend the system:
 
 1. Add new tools in `tools.py`
 2. Define new agents in `agents.py`
-3. Update the main workflow in `main.py`
+3. Update the main workflow in `pipeline.py`
 4. Test with different LLM providers
 
 ## 📝 License
