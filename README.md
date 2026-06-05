@@ -23,6 +23,10 @@ This project demonstrates a sophisticated AI research automation system that com
 
 ## 🏗️ Architecture
 
+### System Flow Diagram
+
+![Architecture Flow Diagram](images/architecture_flow_diag.png)
+
 The system consists of four main components:
 
 ### 1. **Tools** (`tools.py`)
@@ -110,13 +114,17 @@ streamlit run app.py
 
 ```
 multi-agent-AI-research-system/
-├── pipeline.py          # Entry point and main pipeline
-├── agents.py            # Agent definitions and orchestration
-├── tools.py             # Tool implementations (web search, scraping)
-├── pyproject.toml       # Project metadata and dependencies
-├── requirements.txt     # Python package requirements
-├── .env                 # Environment variables (create this)
-└── README.md            # This file
+├── pipeline.py                      # Entry point and main pipeline
+├── agents.py                        # Agent definitions and orchestration
+├── tools.py                         # Tool implementations (web search, scraping)
+├── app.py                           # Streamlit UI application
+├── pyproject.toml                   # Project metadata and dependencies
+├── requirements.txt                 # Python package requirements
+├── README.md                        # This file
+├── .env                             # Environment variables (create this)
+├── .venv/                           # Virtual environment
+├── images/                          # Project diagrams and assets
+│   └── architecture_flow_diag.png  # Architecture flow diagram
 ```
 
 ## 🔧 Dependencies
